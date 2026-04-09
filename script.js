@@ -11,3 +11,16 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+window.addEventListener("scroll", () => {
+  const sections = document.querySelectorAll(".section");
+
+  sections.forEach(sec => {
+    const top = sec.getBoundingClientRect().top;
+    const screen = window.innerHeight;
+
+    if (top < screen - 100) {
+      sec.classList.add("show");
+    }
+  });
+});
