@@ -1,17 +1,6 @@
-// Simple animation on scroll
-window.addEventListener("scroll", () => {
-  const cards = document.querySelectorAll(".card");
-  cards.forEach(card => {
-    const position = card.getBoundingClientRect().top;
-    const screenHeight = window.innerHeight;
+console.log("Website Loaded");
 
-    if (position < screenHeight - 100) {
-      card.style.opacity = "1";
-      card.style.transform = "translateY(0)";
-    }
-  });
-});
-
+// Scroll animation
 window.addEventListener("scroll", () => {
   const sections = document.querySelectorAll(".section");
 
@@ -20,7 +9,8 @@ window.addEventListener("scroll", () => {
     const screen = window.innerHeight;
 
     if (top < screen - 100) {
-      sec.classList.add("show");
+      sec.style.opacity = "1";
+      sec.style.transform = "translateY(0)";
     }
   });
 });
