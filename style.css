@@ -6,6 +6,7 @@
 }
 
 body {
+  line-hight: 1.6;
   font-family: 'Poppins', sans-serif;
   background: #f5f7ff;
   color: #111; /* dark black text */
@@ -49,26 +50,27 @@ body {
 .hero {
   height: 90vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #eef2ff, #dbe4ff);
   text-align: center;
+  padding: 0 20px;
 }
 
 .hero h1 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
-  color: #111;
+  margin-bottom: 15px;
 }
 
 .hero p {
   color: #555;
+  margin-bottom: 20px;
 }
 
 .btn {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .btn:hover {
@@ -77,10 +79,17 @@ body {
 
 /* SECTION */
 .section {
-  padding: 60px 20px;
+  padding: 80px 20px;
   text-align: center;
-  background: white;
-  color: #111;
+}
+
+.section h2 {
+  margin-bottom: 15px;
+}
+
+.section p {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .dark {
@@ -183,3 +192,9 @@ footer {
   margin: 0;
   padding: 0;
 }
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
