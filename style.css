@@ -130,12 +130,17 @@ footer {
   gap: 10px;
 }
 
+/* THIS FIXES BIG LOGO */
 .logo-container img {
-  height: 50px;
+  height: 35px;
+  width: auto;
+  max-width: 100%;
 }
 
+/* TEXT STYLE */
 .logo-container h2 {
-  color: white;
-  font-size: 20px;
+  color: gold;
+  font-size: 18px;
   font-weight: 600;
+  margin: 0;
 }
