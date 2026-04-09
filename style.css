@@ -132,9 +132,8 @@ footer {
 
 /* THIS FIXES BIG LOGO */
 .logo-container img {
-  height: 35px;
-  width: auto;
   max-width: 100%;
+  height: auto;
 }
 
 /* TEXT STYLE */
