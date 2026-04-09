@@ -1,16 +1,11 @@
 console.log("Website Loaded");
 
-// Scroll animation
-window.addEventListener("scroll", () => {
-  const sections = document.querySelectorAll(".section");
-
-  sections.forEach(sec => {
-    const top = sec.getBoundingClientRect().top;
-    const screen = window.innerHeight;
-
-    if (top < screen - 100) {
-      sec.style.opacity = "1";
-      sec.style.transform = "translateY(0)";
-    }
+// Smooth scroll effect
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
   });
 });
