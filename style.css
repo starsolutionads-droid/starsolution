@@ -6,7 +6,9 @@
 }
 
 body {
-  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7ff;
+  color: #111; /* dark black text */
 }
 
 /* NAVBAR */
@@ -14,7 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 20px;
-  background: #0a0f2c;
+  background: linear-gradient(90deg, #5f2cff, #2a52ff);
   color: white;
 }
 
@@ -32,7 +34,7 @@ body {
 /* HERO */
 .hero {
   height: 90vh;
-  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  background: linear-gradient(135deg, #5f2cff, #2a52ff);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,24 +43,27 @@ body {
 }
 
 .btn {
-  background: gold;
+  background: white;
+  color: #5f2cff;
   padding: 10px 20px;
   margin-top: 15px;
   display: inline-block;
   text-decoration: none;
-  color: black;
   border-radius: 5px;
+  font-weight: bold;
 }
 
 /* SECTION */
 .section {
   padding: 60px 20px;
   text-align: center;
+  background: white;
+  color: #111;
 }
 
 .dark {
-  background: #0a0f2c;
-  color: white;
+  background: #eef1ff;
+  color: #111;
 }
 
 /* CARDS */
@@ -74,8 +79,9 @@ body {
   background: white;
   padding: 20px;
   width: 250px;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .dark .card {
@@ -84,6 +90,7 @@ body {
 
 .card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(95,44,255,0.2);
 }
 
 /* WHY */
@@ -138,8 +145,7 @@ footer {
 
 /* TEXT STYLE */
 .logo-container h2 {
-  color: gold;
+  color: #111;
   font-size: 18px;
-  font-weight: 600;
-  margin: 0;
+  font-weight: bold;
 }
