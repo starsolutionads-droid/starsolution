@@ -15,14 +15,14 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background: linear-gradient(90deg, #5f2cff, #2a52ff);
-  color: white;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 .navbar ul {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   list-style: none;
 }
 
@@ -31,26 +31,54 @@ body {
   text-decoration: none;
 }
 
+.navbar ul li a {
+  padding: 8px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.navbar ul li a:hover {
+  background: #5f2cff;
+  color: white;
+}
+
 /* HERO */
 .hero {
   height: 90vh;
-  background: linear-gradient(135deg, #5f2cff, #2a52ff);
+  background: linear-gradient(135deg, #eef2ff, #dbe4ff);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #111;
+}
+
+.hero h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #111;
+}
+
+.hero p {
+  color: #555;
 }
 
 .btn {
-  background: white;
-  color: #5f2cff;
+  background: #5f2cff;
+  color: white;
   padding: 10px 20px;
-  margin-top: 15px;
-  display: inline-block;
+  border-radius: 6px;
   text-decoration: none;
-  border-radius: 5px;
   font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #4520cc;
 }
 
 /* SECTION */
