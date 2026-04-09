@@ -139,8 +139,10 @@ footer {
 
 /* THIS FIXES BIG LOGO */
 .logo-container img {
-  max-width: 100%;
-  height: auto;
+  height: 35px !important;
+  width: auto !important;
+  max-width: none !important;
+  min-width: 0 !important;
 }
 
 /* TEXT STYLE */
