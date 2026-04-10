@@ -6,20 +6,18 @@
 <title>Star Solution</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <header>
   <div class="logo">
     <img src="logo.png">
     <div>
       <h2>STAR SOLUTION</h2>
-      <span>A Landmark For The Marketing Solutions</span>
+      <span class="tagline">A Landmark For The Marketing Solutions</span>
     </div>
   </div>
 
@@ -33,10 +31,12 @@
 </header>
 
 <!-- HOME -->
-<section id="home" class="section hero">
-  <h1>We Grow Your Business Digitally</h1>
-  <p>Powerful Digital Marketing, WhatsApp Marketing & Lead Generation Solutions</p>
-  <button>Get Started</button>
+<section id="home" class="hero">
+  <div class="container">
+    <h1>We Grow Your Business Digitally</h1>
+    <p>Powerful Digital Marketing, WhatsApp Marketing & Lead Generation Solutions</p>
+    <button onclick="scrollToSection('contact')">Get Started</button>
+  </div>
 </section>
 
 <!-- ABOUT -->
@@ -45,31 +45,21 @@
 
     <h2>About Us</h2>
 
-    <p>
-Star Solution is a dynamic and customer-focused service provider committed to delivering innovative, reliable, and result-driven solutions. We specialize in helping businesses grow by offering high-quality digital and marketing services tailored to meet modern industry needs.
-    </p>
+    <p>Star Solution is a dynamic and customer-focused service provider committed to delivering innovative, reliable, and result-driven solutions. We specialize in helping businesses grow by offering high-quality digital and marketing services tailored to meet modern industry needs.</p>
 
-    <p>
-With a strong passion for excellence, Star Solution combines creativity, technology, and strategy to deliver outstanding results. Our goal is to empower businesses—whether small startups or established enterprises—by enhancing their visibility, improving engagement, and driving success in today’s competitive market.
-    </p>
+    <p>With a strong passion for excellence, Star Solution combines creativity, technology, and strategy to deliver outstanding results. Our goal is to empower businesses—whether small startups or established enterprises—by enhancing their visibility, improving engagement, and driving success in today’s competitive market.</p>
 
-    <p>
-We believe in building long-term relationships with our clients through trust, transparency, and consistent performance. Every project we take on is handled with dedication, attention to detail, and a commitment to exceeding expectations.
-    </p>
+    <p>We believe in building long-term relationships with our clients through trust, transparency, and consistent performance. Every project we take on is handled with dedication, attention to detail, and a commitment to exceeding expectations.</p>
 
-    <div class="mission-vision">
-      <div>
+    <div class="mv">
+      <div class="card">
         <h3>Our Mission</h3>
-        <p>
-To provide innovative and effective solutions that help businesses grow, succeed, and stand out in the digital world.
-        </p>
+        <p>To provide innovative and effective solutions that help businesses grow, succeed, and stand out in the digital world.</p>
       </div>
 
-      <div>
+      <div class="card">
         <h3>Our Vision</h3>
-        <p>
-To become a trusted and leading solution provider known for quality, creativity, and customer satisfaction.
-        </p>
+        <p>To become a trusted and leading solution provider known for quality, creativity, and customer satisfaction.</p>
       </div>
     </div>
 
@@ -85,7 +75,7 @@ To become a trusted and leading solution provider known for quality, creativity,
     <div class="services">
 
       <div class="service">
-        <h3 onclick="toggle(this)">WhatsApp Marketing</h3>
+        <div class="service-title" onclick="toggle(this)">WhatsApp Marketing</div>
         <ul>
           <li>1. Cloud Based WhatsApp</li>
           <li>2. System Based WhatsApp</li>
@@ -96,22 +86,22 @@ To become a trusted and leading solution provider known for quality, creativity,
       </div>
 
       <div class="service">
-        <h3 onclick="toggle(this)">SMS Marketing</h3>
+        <div class="service-title" onclick="toggle(this)">SMS Marketing</div>
         <ul>
           <li>1. Bulk SMS Campaign</li>
         </ul>
       </div>
 
       <div class="service">
-        <h3 onclick="toggle(this)">Lead Generation</h3>
+        <div class="service-title" onclick="toggle(this)">Lead Generation</div>
         <ul>
-          <li>1. Facebook & Instagram Leads</li>
+          <li>1. Facebook & Instagram Lead Generation</li>
           <li>2. 3in1 IVR Tool</li>
         </ul>
       </div>
 
       <div class="service">
-        <h3 onclick="toggle(this)">Digital Marketing</h3>
+        <div class="service-title" onclick="toggle(this)">Digital Marketing</div>
         <ul>
           <li>1. Social Media Marketing</li>
           <li>2. Google Ads</li>
@@ -120,14 +110,14 @@ To become a trusted and leading solution provider known for quality, creativity,
       </div>
 
       <div class="service">
-        <h3 onclick="toggle(this)">Application Development</h3>
+        <div class="service-title" onclick="toggle(this)">Application Development</div>
         <ul>
           <li>1. Android & iOS Apps</li>
         </ul>
       </div>
 
       <div class="service">
-        <h3 onclick="toggle(this)">Website Development</h3>
+        <div class="service-title" onclick="toggle(this)">Website Development</div>
         <ul>
           <li>1. Business Website</li>
           <li>2. E-commerce Website</li>
@@ -141,14 +131,16 @@ To become a trusted and leading solution provider known for quality, creativity,
 
 <!-- WHY -->
 <section id="why" class="section light">
-  <h2>Why Choose Star Solution?</h2>
+  <div class="container">
+    <h2>Why Choose Star Solution?</h2>
 
-  <div class="why">
-    <span>Professional Team</span>
-    <span>Customized Solutions</span>
-    <span>Affordable Services</span>
-    <span>Timely Delivery</span>
-    <span>Strong Support</span>
+    <div class="why">
+      <div>Professional Team</div>
+      <div>Customized Solutions</div>
+      <div>Affordable Services</div>
+      <div>Timely Delivery</div>
+      <div>Strong Support</div>
+    </div>
   </div>
 </section>
 
@@ -165,7 +157,7 @@ To become a trusted and leading solution provider known for quality, creativity,
       <input type="text" placeholder="Your Name">
       <input type="email" placeholder="Your Email">
       <textarea placeholder="Your Message"></textarea>
-      <button>Send Message</button>
+      <button type="submit">Send Message</button>
     </form>
 
   </div>
