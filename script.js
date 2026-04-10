@@ -10,10 +10,20 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Click action (for demo)
-document.querySelectorAll('.sub').forEach(item => {
-  item.addEventListener('click', function(e){
-    e.preventDefault();
-    alert("You selected: " + this.innerText);
+// Toggle services
+function toggleService(element) {
+
+  document.querySelectorAll('.service-details').forEach(item => {
+    if(item !== element.nextElementSibling){
+      item.style.display = "none";
+    }
   });
-});
+
+  let details = element.nextElementSibling;
+
+  if (details.style.display === "block") {
+    details.style.display = "none";
+  } else {
+    details.style.display = "block";
+  }
+}
