@@ -10,13 +10,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Toggle service details
-function toggleService(element) {
-  let details = element.nextElementSibling;
-
-  if (details.style.display === "block") {
-    details.style.display = "none";
-  } else {
-    details.style.display = "block";
-  }
-}
+// Click action (for demo)
+document.querySelectorAll('.sub').forEach(item => {
+  item.addEventListener('click', function(e){
+    e.preventDefault();
+    alert("You selected: " + this.innerText);
+  });
+});
