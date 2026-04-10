@@ -1,105 +1,39 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+body {
+  font-family: Poppins;
 }
 
-body {
-  background: #f5f7ff;
-  color: #111;
+.section {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.active {
+  display: block;
+}
+
+.hidden {
+  display: none;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: white;
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-container img {
-  height: 45px;
-}
-
-.tagline {
-  font-family: 'Great Vibes', cursive;
-  color: #5f2cff;
+  padding: 20px;
 }
 
 .nav-menu {
   display: flex;
   gap: 20px;
-  list-style: none;
-}
-
-.nav-menu a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #111;
-}
-
-.hero {
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(270deg, #eef2ff, #dbe4ff, #c7d2fe);
-  text-align: center;
-}
-
-.btn {
-  background: #5f2cff;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 6px;
-}
-
-.section {
-  padding: 80px 20px;
-  text-align: center;
-}
-
-.about-text {
-  max-width: 800px;
-  margin: auto;
-  margin-bottom: 30px;
-  line-height: 1.6;
-}
-
-.services-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
 }
 
 .card {
   background: white;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 15px;
+  margin: 10px;
   cursor: pointer;
 }
 
 .service-details {
   display: none;
-}
-
-.sub {
-  display: block;
-  padding: 8px;
-  margin: 5px 0;
-  border: 1px solid #ddd;
-}
-
-.why-list {
-  list-style: none;
-  max-width: 500px;
-  margin: auto;
-  text-align: left;
 }
