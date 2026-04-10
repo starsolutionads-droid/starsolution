@@ -1,54 +1,93 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background: #f5f7ff;
-  text-align: center;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins';
 }
 
-header {
-  padding: 20px;
+body {
+  background: #f5f7ff;
+  color: #111;
 }
 
-h1 {
-  color: #5f2cff;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background: white;
+}
+
+.logo-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 40px;
 }
 
 .tagline {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Great Vibes';
   color: #5f2cff;
 }
 
+/* MENU */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(#eef2ff,#dbe4ff);
+  text-align: center;
+}
+
+.btn {
+  background: #5f2cff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
 /* SERVICES */
-.services {
-  padding: 40px;
+.section {
+  padding: 60px 20px;
+  text-align: center;
 }
 
 .service {
-  margin: 15px auto;
+  margin: 10px auto;
   max-width: 500px;
 }
 
-/* BUTTON */
 .service button {
   width: 100%;
   padding: 15px;
-  font-size: 16px;
-  font-weight: bold;
   background: #5f2cff;
   color: white;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
+  font-weight: bold;
 }
 
-/* CONTENT */
 .content {
   display: none;
   background: white;
-  padding: 15px;
+  padding: 10px;
   border-radius: 6px;
-}
-
-.content p {
-  padding: 5px;
 }
