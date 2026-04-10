@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>STAR SOLUTION</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -13,73 +14,103 @@
 
 <body>
 
-<!-- HEADER -->
-<header>
-  <h1>STAR SOLUTION</h1>
-  <p class="tagline">A Landmark For The Marketing Solutions</p>
-</header>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo-container">
+    <img src="logo.png">
+    <div>
+      <h2>STAR SOLUTION</h2>
+      <p class="tagline">A Landmark For The Marketing Solutions</p>
+    </div>
+  </div>
+
+  <ul class="nav-menu">
+    <li><a href="#home">HOME</a></li>
+    <li><a href="#services">SERVICES</a></li>
+    <li><a href="#contact">CONTACT</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1>Grow Your Business Digitally</h1>
+    <p>Marketing | Ads | Lead Generation</p>
+    <a href="#contact" class="btn">Get Started</a>
+  </div>
+</section>
 
 <!-- SERVICES -->
-<section class="services">
-
+<section id="services" class="section">
 <h2>Our Services</h2>
 
-<!-- SERVICE 1 -->
+<div class="service-box">
+
+<!-- WHATSAPP -->
 <div class="service">
-  <button onclick="toggle(this)">WhatsApp Marketing</button>
-  <div class="content">
-    <p>Cloud Based WhatsApp</p>
-    <p>System Based WhatsApp</p>
-    <p>Virtual Number WhatsApp</p>
-    <p>Mobile Based WhatsApp</p>
-    <p>Meta Verified Official WhatsApp</p>
-  </div>
+<button onclick="toggle(this)">WhatsApp Marketing</button>
+<div class="content">
+<p>Cloud Based WhatsApp</p>
+<p>System Based WhatsApp</p>
+<p>Virtual Number WhatsApp</p>
+<p>Mobile Based WhatsApp</p>
+<p>Meta Verified Official WhatsApp</p>
+</div>
 </div>
 
-<!-- SERVICE 2 -->
+<!-- SMS -->
 <div class="service">
-  <button onclick="toggle(this)">SMS Marketing</button>
-  <div class="content">
-    <p>Bulk SMS Campaign</p>
-  </div>
+<button onclick="toggle(this)">SMS Marketing</button>
+<div class="content">
+<p>Bulk SMS Campaign</p>
+</div>
 </div>
 
-<!-- SERVICE 3 -->
+<!-- LEAD -->
 <div class="service">
-  <button onclick="toggle(this)">Lead Generation</button>
-  <div class="content">
-    <p>Facebook & Instagram Leads</p>
-    <p>3in1 IVR Tool</p>
-  </div>
+<button onclick="toggle(this)">Lead Generation</button>
+<div class="content">
+<p>Facebook & Instagram Leads</p>
+<p>3in1 IVR Tool</p>
+</div>
 </div>
 
-<!-- SERVICE 4 -->
+<!-- DIGITAL -->
 <div class="service">
-  <button onclick="toggle(this)">Digital Marketing</button>
-  <div class="content">
-    <p>Social Media Marketing</p>
-    <p>Google Ads</p>
-    <p>SEO</p>
-  </div>
+<button onclick="toggle(this)">Digital Marketing</button>
+<div class="content">
+<p>Social Media Marketing</p>
+<p>Google Ads</p>
+<p>SEO</p>
+</div>
 </div>
 
-<!-- SERVICE 5 -->
+<!-- APP -->
 <div class="service">
-  <button onclick="toggle(this)">Application Development</button>
-  <div class="content">
-    <p>Android & iOS Apps</p>
-  </div>
+<button onclick="toggle(this)">Application Development</button>
+<div class="content">
+<p>Android & iOS Apps</p>
+</div>
 </div>
 
-<!-- SERVICE 6 -->
+<!-- WEBSITE -->
 <div class="service">
-  <button onclick="toggle(this)">Website Development</button>
-  <div class="content">
-    <p>Business Website</p>
-    <p>E-commerce Website</p>
-  </div>
+<button onclick="toggle(this)">Website Development</button>
+<div class="content">
+<p>Business Website</p>
+<p>E-commerce Website</p>
+</div>
 </div>
 
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+<h2>Contact Us</h2>
+<p>Email: starsolutionads@gmail.com</p>
+<p>Phone: +91 9727773366</p>
 </section>
 
 <script src="script.js"></script>
