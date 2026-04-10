@@ -1,7 +1,7 @@
-function toggle(button) {
-  let content = button.nextElementSibling;
+function toggle(btn){
+  let content = btn.nextElementSibling;
 
-  if (content.style.display === "block") {
+  if(content.style.display === "block"){
     content.style.display = "none";
   } else {
     content.style.display = "block";
