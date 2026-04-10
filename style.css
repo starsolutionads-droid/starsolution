@@ -75,7 +75,6 @@ body {
 
 .hero h1 {
   font-size: 36px;
-  animation: pop 1s forwards;
 }
 
 .hero p {
@@ -97,41 +96,43 @@ body {
   text-align: center;
 }
 
-.cards {
-  display: flex;
+/* NEW SERVICES FIX */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 20px;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: 20px;
 }
 
 .card {
   background: white;
   padding: 20px;
-  width: 220px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  transition: 0.3s;
   cursor: pointer;
+  text-align: center;
+  transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-8px);
 }
 
-/* SERVICE DETAILS */
 .service-details {
   display: none;
   background: #eef2ff;
-  padding: 15px;
-  margin: 10px auto;
-  max-width: 600px;
-  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
   text-align: left;
 }
 
-.service-details p {
-  margin: 5px 0;
+/* WHY CARDS */
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 /* FORM */
@@ -147,14 +148,9 @@ input, textarea {
   padding: 10px;
 }
 
-/* ANIMATIONS */
+/* ANIMATION */
 @keyframes bgMove {
   0% { background-position: 0% }
   50% { background-position: 100% }
   100% { background-position: 0% }
-}
-
-@keyframes pop {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
 }
