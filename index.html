@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>STAR SOLUTION</title>
+<title>Star Solution</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
@@ -14,60 +14,62 @@
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo-container">
+<header>
+  <div class="logo">
     <img src="logo.png">
     <div>
       <h2>STAR SOLUTION</h2>
-      <p class="tagline">A Landmark For The Marketing Solutions</p>
+      <span>A Landmark For The Marketing Solutions</span>
     </div>
   </div>
 
-  <ul class="nav-menu">
-    <li><a href="#home">HOME</a></li>
-    <li><a href="#about">ABOUT</a></li>
-    <li><a href="#services">SERVICES</a></li>
-    <li><a href="#why">WHY US</a></li>
-    <li><a href="#contact">CONTACT</a></li>
-  </ul>
-</nav>
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#about">ABOUT</a>
+    <a href="#services">SERVICES</a>
+    <a href="#why">WHY US</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+</header>
 
 <!-- HOME -->
 <section id="home" class="section hero">
-  <div class="container">
-    <h1>We Grow Your Business Digitally</h1>
-    <p>Powerful Digital Marketing, WhatsApp Marketing & Lead Generation Solutions</p>
-    <a href="#contact" class="btn">Get Started</a>
-  </div>
+  <h1>We Grow Your Business Digitally</h1>
+  <p>Powerful Digital Marketing, WhatsApp Marketing & Lead Generation Solutions</p>
+  <button>Get Started</button>
 </section>
 
 <!-- ABOUT -->
 <section id="about" class="section">
-  <div class="container narrow">
+  <div class="container">
 
     <h2>About Us</h2>
 
     <p>
-      Star Solution is a dynamic and customer-focused service provider committed to delivering innovative, reliable, and result-driven solutions.
+Star Solution is a dynamic and customer-focused service provider committed to delivering innovative, reliable, and result-driven solutions. We specialize in helping businesses grow by offering high-quality digital and marketing services tailored to meet modern industry needs.
     </p>
 
     <p>
-      With a strong passion for excellence, we combine creativity, technology, and strategy to deliver outstanding results and empower businesses.
+With a strong passion for excellence, Star Solution combines creativity, technology, and strategy to deliver outstanding results. Our goal is to empower businesses—whether small startups or established enterprises—by enhancing their visibility, improving engagement, and driving success in today’s competitive market.
     </p>
 
     <p>
-      We believe in building long-term relationships with our clients through trust, transparency, and consistent performance.
+We believe in building long-term relationships with our clients through trust, transparency, and consistent performance. Every project we take on is handled with dedication, attention to detail, and a commitment to exceeding expectations.
     </p>
 
-    <div class="mv">
-      <div class="mv-card">
+    <div class="mission-vision">
+      <div>
         <h3>Our Mission</h3>
-        <p>To provide innovative solutions that help businesses grow.</p>
+        <p>
+To provide innovative and effective solutions that help businesses grow, succeed, and stand out in the digital world.
+        </p>
       </div>
 
-      <div class="mv-card">
+      <div>
         <h3>Our Vision</h3>
-        <p>To become a trusted and leading solution provider.</p>
+        <p>
+To become a trusted and leading solution provider known for quality, creativity, and customer satisfaction.
+        </p>
       </div>
     </div>
 
@@ -80,56 +82,56 @@
 
     <h2>Our Services</h2>
 
-    <div class="services-grid">
+    <div class="services">
 
       <div class="service">
-        <div class="card" onclick="toggleService(this)">WhatsApp Marketing</div>
-        <div class="details">
-          <div>1 Cloud WhatsApp</div>
-          <div>2 System WhatsApp</div>
-          <div>3 Virtual Number</div>
-          <div>4 Mobile Based</div>
-          <div>5 Meta Verified</div>
-        </div>
+        <h3 onclick="toggle(this)">WhatsApp Marketing</h3>
+        <ul>
+          <li>1. Cloud Based WhatsApp</li>
+          <li>2. System Based WhatsApp</li>
+          <li>3. Virtual Number WhatsApp</li>
+          <li>4. Mobile Based WhatsApp</li>
+          <li>5. Meta Verified Official WhatsApp</li>
+        </ul>
       </div>
 
       <div class="service">
-        <div class="card" onclick="toggleService(this)">SMS Marketing</div>
-        <div class="details">
-          <div>1 Bulk SMS Campaign</div>
-        </div>
+        <h3 onclick="toggle(this)">SMS Marketing</h3>
+        <ul>
+          <li>1. Bulk SMS Campaign</li>
+        </ul>
       </div>
 
       <div class="service">
-        <div class="card" onclick="toggleService(this)">Lead Generation</div>
-        <div class="details">
-          <div>1 Facebook Leads</div>
-          <div>2 IVR Tool</div>
-        </div>
+        <h3 onclick="toggle(this)">Lead Generation</h3>
+        <ul>
+          <li>1. Facebook & Instagram Leads</li>
+          <li>2. 3in1 IVR Tool</li>
+        </ul>
       </div>
 
       <div class="service">
-        <div class="card" onclick="toggleService(this)">Digital Marketing</div>
-        <div class="details">
-          <div>1 Social Media</div>
-          <div>2 Google Ads</div>
-          <div>3 SEO</div>
-        </div>
+        <h3 onclick="toggle(this)">Digital Marketing</h3>
+        <ul>
+          <li>1. Social Media Marketing</li>
+          <li>2. Google Ads</li>
+          <li>3. SEO</li>
+        </ul>
       </div>
 
       <div class="service">
-        <div class="card" onclick="toggleService(this)">Application Development</div>
-        <div class="details">
-          <div>1 Android & iOS Apps</div>
-        </div>
+        <h3 onclick="toggle(this)">Application Development</h3>
+        <ul>
+          <li>1. Android & iOS Apps</li>
+        </ul>
       </div>
 
       <div class="service">
-        <div class="card" onclick="toggleService(this)">Website Development</div>
-        <div class="details">
-          <div>1 Business Website</div>
-          <div>2 E-commerce</div>
-        </div>
+        <h3 onclick="toggle(this)">Website Development</h3>
+        <ul>
+          <li>1. Business Website</li>
+          <li>2. E-commerce Website</li>
+        </ul>
       </div>
 
     </div>
@@ -139,24 +141,20 @@
 
 <!-- WHY -->
 <section id="why" class="section light">
-  <div class="container">
+  <h2>Why Choose Star Solution?</h2>
 
-    <h2>Why Choose Star Solution?</h2>
-
-    <div class="why">
-      <div>Professional Team</div>
-      <div>Customized Solutions</div>
-      <div>Affordable</div>
-      <div>Fast Delivery</div>
-      <div>Strong Support</div>
-    </div>
-
+  <div class="why">
+    <span>Professional Team</span>
+    <span>Customized Solutions</span>
+    <span>Affordable Services</span>
+    <span>Timely Delivery</span>
+    <span>Strong Support</span>
   </div>
 </section>
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-  <div class="container narrow">
+  <div class="container">
 
     <h2>Contact Us</h2>
 
@@ -166,7 +164,7 @@
     <form>
       <input type="text" placeholder="Your Name">
       <input type="email" placeholder="Your Email">
-      <textarea placeholder="Message"></textarea>
+      <textarea placeholder="Your Message"></textarea>
       <button>Send Message</button>
     </form>
 
