@@ -1,27 +1,12 @@
-console.log("Website Loaded");
+function toggleService(el){
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener("click", function(e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute("href")).scrollIntoView({
-      behavior: "smooth"
-    });
-  });
-});
-
-function toggleService(element) {
-
-  document.querySelectorAll('.service-details').forEach(item => {
-    if(item !== element.nextElementSibling){
-      item.style.display = "none";
+  document.querySelectorAll('.details').forEach(d=>{
+    if(d !== el.nextElementSibling){
+      d.style.display = "none";
     }
   });
 
-  let details = element.nextElementSibling;
+  let box = el.nextElementSibling;
 
-  if (details.style.display === "block") {
-    details.style.display = "none";
-  } else {
-    details.style.display = "block";
-  }
+  box.style.display = box.style.display === "block" ? "none" : "block";
 }
