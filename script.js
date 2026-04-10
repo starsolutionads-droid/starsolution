@@ -10,13 +10,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Service toggle
-function toggleService(id) {
-  let el = document.getElementById(id);
+// Toggle service details
+function toggleService(element) {
+  let details = element.nextElementSibling;
 
-  if (el.style.display === "block") {
-    el.style.display = "none";
+  if (details.style.display === "block") {
+    details.style.display = "none";
   } else {
-    el.style.display = "block";
+    details.style.display = "block";
   }
 }
