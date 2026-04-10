@@ -1,17 +1,25 @@
-function showSection(id) {
+console.log("Website Loaded");
 
-  document.querySelectorAll('.section').forEach(sec => {
-    sec.classList.remove('active');
-    sec.classList.add('hidden');
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href")).scrollIntoView({
+      behavior: "smooth"
+    });
   });
-
-  document.getElementById(id).classList.add('active');
-}
+});
 
 function toggleService(element) {
+
+  document.querySelectorAll('.service-details').forEach(item => {
+    if(item !== element.nextElementSibling){
+      item.style.display = "none";
+    }
+  });
+
   let details = element.nextElementSibling;
 
-  if(details.style.display === "block"){
+  if (details.style.display === "block") {
     details.style.display = "none";
   } else {
     details.style.display = "block";
