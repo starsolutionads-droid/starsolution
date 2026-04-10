@@ -112,10 +112,26 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .card:hover {
   transform: translateY(-10px);
+}
+
+/* SERVICE DETAILS */
+.service-details {
+  display: none;
+  background: #eef2ff;
+  padding: 15px;
+  margin: 10px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.service-details p {
+  margin: 5px 0;
 }
 
 /* FORM */
