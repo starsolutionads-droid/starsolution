@@ -1,6 +1,5 @@
 console.log("Website Loaded");
 
-// Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener("click", function(e) {
     e.preventDefault();
@@ -10,7 +9,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-// Toggle services
 function toggleService(element) {
 
   document.querySelectorAll('.service-details').forEach(item => {
